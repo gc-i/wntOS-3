@@ -1,0 +1,691 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MeterDialog</class>
+ <widget class="QDialog" name="MeterDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>588</width>
+    <height>575</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>588</width>
+    <height>450</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>588</width>
+    <height>640</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Add / Edit Meter</string>
+  </property>
+  <widget class="QDialogButtonBox" name="buttonBox">
+   <property name="geometry">
+    <rect>
+     <x>405</x>
+     <y>540</y>
+     <width>166</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+   <property name="standardButtons">
+    <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
+   </property>
+  </widget>
+  <widget class="QTabWidget" name="tabWidget">
+   <property name="geometry">
+    <rect>
+     <x>15</x>
+     <y>10</y>
+     <width>556</width>
+     <height>521</height>
+    </rect>
+   </property>
+   <property name="currentIndex">
+    <number>0</number>
+   </property>
+   <widget class="QWidget" name="tab">
+    <attribute name="title">
+     <string>Description</string>
+    </attribute>
+    <widget class="QLineEdit" name="meter_number_edit">
+     <property name="geometry">
+      <rect>
+       <x>27</x>
+       <y>30</y>
+       <width>196</width>
+       <height>20</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label">
+     <property name="geometry">
+      <rect>
+       <x>27</x>
+       <y>15</y>
+       <width>126</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Meter Number</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_7">
+     <property name="geometry">
+      <rect>
+       <x>265</x>
+       <y>135</y>
+       <width>126</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Operating State</string>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="inspection_intervall_unit_cbox">
+     <property name="geometry">
+      <rect>
+       <x>265</x>
+       <y>70</y>
+       <width>196</width>
+       <height>22</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="plot_no_edit">
+     <property name="geometry">
+      <rect>
+       <x>25</x>
+       <y>150</y>
+       <width>196</width>
+       <height>20</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_15">
+     <property name="geometry">
+      <rect>
+       <x>265</x>
+       <y>335</y>
+       <width>126</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Network</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="district_edit">
+     <property name="geometry">
+      <rect>
+       <x>25</x>
+       <y>190</y>
+       <width>196</width>
+       <height>20</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="street_edit">
+     <property name="geometry">
+      <rect>
+       <x>25</x>
+       <y>310</y>
+       <width>196</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_21">
+     <property name="geometry">
+      <rect>
+       <x>265</x>
+       <y>175</y>
+       <width>126</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Date of Status Change</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="ward_edit">
+     <property name="geometry">
+      <rect>
+       <x>25</x>
+       <y>270</y>
+       <width>196</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_14">
+     <property name="geometry">
+      <rect>
+       <x>265</x>
+       <y>295</y>
+       <width>126</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Height [m]</string>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="installation_date_chbox">
+     <property name="geometry">
+      <rect>
+       <x>25</x>
+       <y>355</y>
+       <width>26</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_3">
+     <property name="geometry">
+      <rect>
+       <x>25</x>
+       <y>335</y>
+       <width>126</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Installation Date</string>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="date_of_first_use_chbox">
+     <property name="geometry">
+      <rect>
+       <x>25</x>
+       <y>405</y>
+       <width>26</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="network_cbox">
+     <property name="geometry">
+      <rect>
+       <x>265</x>
+       <y>350</y>
+       <width>196</width>
+       <height>22</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_22">
+     <property name="geometry">
+      <rect>
+       <x>25</x>
+       <y>385</y>
+       <width>126</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Date of First Use</string>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="date_of_last_inspection_chbox">
+     <property name="geometry">
+      <rect>
+       <x>265</x>
+       <y>115</y>
+       <width>26</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QDoubleSpinBox" name="inspection_intervall_sbox">
+     <property name="geometry">
+      <rect>
+       <x>265</x>
+       <y>30</y>
+       <width>196</width>
+       <height>22</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QDateEdit" name="date_of_last_inspection_edit">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>290</x>
+       <y>110</y>
+       <width>171</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="displayFormat">
+      <string>yyyy-MM-dd</string>
+     </property>
+     <property name="calendarPopup">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_13">
+     <property name="geometry">
+      <rect>
+       <x>265</x>
+       <y>95</y>
+       <width>126</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Date of Last Inspection</string>
+     </property>
+    </widget>
+    <widget class="QDateEdit" name="status_change_date_edit">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>290</x>
+       <y>190</y>
+       <width>171</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="displayFormat">
+      <string>yyyy-MM-dd</string>
+     </property>
+     <property name="calendarPopup">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_19">
+     <property name="geometry">
+      <rect>
+       <x>25</x>
+       <y>255</y>
+       <width>141</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Ward</string>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="operating_state_cbox">
+     <property name="geometry">
+      <rect>
+       <x>265</x>
+       <y>150</y>
+       <width>196</width>
+       <height>22</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_2">
+     <property name="geometry">
+      <rect>
+       <x>25</x>
+       <y>55</y>
+       <width>216</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Application Control No. (from MAXCOM)</string>
+     </property>
+    </widget>
+    <widget class="QDateEdit" name="installation_date_edit">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>350</y>
+       <width>171</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="displayFormat">
+      <string>yyyy-MM-dd</string>
+     </property>
+     <property name="calendarPopup">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QDoubleSpinBox" name="height_sbox">
+     <property name="geometry">
+      <rect>
+       <x>265</x>
+       <y>310</y>
+       <width>196</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="minimum">
+      <double>-100.000000000000000</double>
+     </property>
+     <property name="maximum">
+      <double>2000.000000000000000</double>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_20">
+     <property name="geometry">
+      <rect>
+       <x>25</x>
+       <y>295</y>
+       <width>141</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Street</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_16">
+     <property name="geometry">
+      <rect>
+       <x>25</x>
+       <y>135</y>
+       <width>141</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Plot Number</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_5">
+     <property name="geometry">
+      <rect>
+       <x>265</x>
+       <y>15</y>
+       <width>126</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Inspection Interval</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_17">
+     <property name="geometry">
+      <rect>
+       <x>25</x>
+       <y>175</y>
+       <width>141</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>District</string>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="status_change_date_chbox">
+     <property name="geometry">
+      <rect>
+       <x>265</x>
+       <y>195</y>
+       <width>26</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QDateEdit" name="date_of_first_use_edit">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>400</y>
+       <width>171</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="displayFormat">
+      <string>yyyy-MM-dd</string>
+     </property>
+     <property name="calendarPopup">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_18">
+     <property name="geometry">
+      <rect>
+       <x>25</x>
+       <y>215</y>
+       <width>141</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Zone</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_6">
+     <property name="geometry">
+      <rect>
+       <x>265</x>
+       <y>55</y>
+       <width>126</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Inspection Interval Unit</string>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="meter_class_cbox">
+     <property name="geometry">
+      <rect>
+       <x>265</x>
+       <y>230</y>
+       <width>196</width>
+       <height>22</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_9">
+     <property name="geometry">
+      <rect>
+       <x>265</x>
+       <y>215</y>
+       <width>126</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Meter Class</string>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="meter_type_cbox">
+     <property name="geometry">
+      <rect>
+       <x>265</x>
+       <y>270</y>
+       <width>196</width>
+       <height>22</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_10">
+     <property name="geometry">
+      <rect>
+       <x>265</x>
+       <y>255</y>
+       <width>126</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Meter Type</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="zone_edit">
+     <property name="geometry">
+      <rect>
+       <x>25</x>
+       <y>230</y>
+       <width>196</width>
+       <height>20</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="view_maxcom_button">
+     <property name="geometry">
+      <rect>
+       <x>195</x>
+       <y>100</y>
+       <width>25</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="toolTip">
+      <string>View Application Details at MAXCOM</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="icon">
+      <iconset resource="resources.qrc">
+       <normaloff>:/wnt/eye.png</normaloff>:/wnt/eye.png</iconset>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="verify_button">
+     <property name="geometry">
+      <rect>
+       <x>160</x>
+       <y>100</y>
+       <width>25</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="toolTip">
+      <string>Verify Control Number</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="icon">
+      <iconset resource="resources.qrc">
+       <normaloff>:/wnt/verify.png</normaloff>:/wnt/verify.png</iconset>
+     </property>
+    </widget>
+    <widget class="QSpinBox" name="control_no_sbox">
+     <property name="geometry">
+      <rect>
+       <x>25</x>
+       <y>70</y>
+       <width>196</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="minimum">
+      <number>-1</number>
+     </property>
+     <property name="maximum">
+      <number>8000000</number>
+     </property>
+     <property name="value">
+      <number>-1</number>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <tabstops>
+  <tabstop>tabWidget</tabstop>
+  <tabstop>meter_number_edit</tabstop>
+  <tabstop>control_no_sbox</tabstop>
+  <tabstop>verify_button</tabstop>
+  <tabstop>view_maxcom_button</tabstop>
+  <tabstop>plot_no_edit</tabstop>
+  <tabstop>district_edit</tabstop>
+  <tabstop>zone_edit</tabstop>
+  <tabstop>ward_edit</tabstop>
+  <tabstop>street_edit</tabstop>
+  <tabstop>installation_date_chbox</tabstop>
+  <tabstop>installation_date_edit</tabstop>
+  <tabstop>date_of_first_use_chbox</tabstop>
+  <tabstop>date_of_first_use_edit</tabstop>
+  <tabstop>inspection_intervall_sbox</tabstop>
+  <tabstop>inspection_intervall_unit_cbox</tabstop>
+  <tabstop>date_of_last_inspection_chbox</tabstop>
+  <tabstop>date_of_last_inspection_edit</tabstop>
+  <tabstop>operating_state_cbox</tabstop>
+  <tabstop>status_change_date_chbox</tabstop>
+  <tabstop>status_change_date_edit</tabstop>
+  <tabstop>meter_class_cbox</tabstop>
+  <tabstop>meter_type_cbox</tabstop>
+  <tabstop>height_sbox</tabstop>
+  <tabstop>network_cbox</tabstop>
+  <tabstop>buttonBox</tabstop>
+ </tabstops>
+ <resources>
+  <include location="resources.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>accepted()</signal>
+   <receiver>MeterDialog</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>248</x>
+     <y>254</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>157</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>rejected()</signal>
+   <receiver>MeterDialog</receiver>
+   <slot>reject()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>316</x>
+     <y>260</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>286</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

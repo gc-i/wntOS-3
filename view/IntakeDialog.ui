@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>IntakeDialog</class>
+ <widget class="QDialog" name="IntakeDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>588</width>
+    <height>410</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>588</width>
+    <height>410</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>588</width>
+    <height>480</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Add / Edit Intake</string>
+  </property>
+  <widget class="QDialogButtonBox" name="buttonBox">
+   <property name="geometry">
+    <rect>
+     <x>405</x>
+     <y>360</y>
+     <width>166</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+   <property name="standardButtons">
+    <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
+   </property>
+  </widget>
+  <widget class="QTabWidget" name="tabWidget">
+   <property name="geometry">
+    <rect>
+     <x>15</x>
+     <y>10</y>
+     <width>556</width>
+     <height>331</height>
+    </rect>
+   </property>
+   <property name="currentIndex">
+    <number>0</number>
+   </property>
+   <widget class="QWidget" name="tab">
+    <attribute name="title">
+     <string>Description</string>
+    </attribute>
+    <widget class="QLineEdit" name="intake_no_edit">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>40</y>
+       <width>196</width>
+       <height>20</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_3">
+     <property name="geometry">
+      <rect>
+       <x>280</x>
+       <y>25</y>
+       <width>126</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Installation Year</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>25</y>
+       <width>126</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Intake Number</string>
+     </property>
+    </widget>
+    <widget class="QDateEdit" name="status_change_date_edit">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>305</x>
+       <y>130</y>
+       <width>171</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="displayFormat">
+      <string>yyyy-MM-dd</string>
+     </property>
+     <property name="calendarPopup">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="status_change_date_chbox">
+     <property name="geometry">
+      <rect>
+       <x>280</x>
+       <y>135</y>
+       <width>26</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_8">
+     <property name="geometry">
+      <rect>
+       <x>280</x>
+       <y>115</y>
+       <width>126</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Date of Status Change</string>
+     </property>
+    </widget>
+    <widget class="QDoubleSpinBox" name="height_sbox">
+     <property name="geometry">
+      <rect>
+       <x>280</x>
+       <y>175</y>
+       <width>196</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="minimum">
+      <double>-100.000000000000000</double>
+     </property>
+     <property name="maximum">
+      <double>2000.000000000000000</double>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_14">
+     <property name="geometry">
+      <rect>
+       <x>280</x>
+       <y>160</y>
+       <width>126</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Height [m]</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_15">
+     <property name="geometry">
+      <rect>
+       <x>280</x>
+       <y>205</y>
+       <width>126</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Network</string>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="network_cbox">
+     <property name="geometry">
+      <rect>
+       <x>280</x>
+       <y>220</y>
+       <width>196</width>
+       <height>22</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QDoubleSpinBox" name="installation_year_sbox">
+     <property name="geometry">
+      <rect>
+       <x>280</x>
+       <y>40</y>
+       <width>196</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="decimals">
+      <number>0</number>
+     </property>
+     <property name="maximum">
+      <double>3000.000000000000000</double>
+     </property>
+     <property name="value">
+      <double>0.000000000000000</double>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_2">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>70</y>
+       <width>126</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Intake Source</string>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="intake_source_cbox">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>85</y>
+       <width>196</width>
+       <height>22</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_5">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>115</y>
+       <width>126</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Intake Type</string>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="intake_type_cbox">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>130</y>
+       <width>196</width>
+       <height>22</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_16">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>205</y>
+       <width>126</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Capacity</string>
+     </property>
+    </widget>
+    <widget class="QDoubleSpinBox" name="capacity_sbox">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>220</y>
+       <width>196</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="minimum">
+      <double>0.000000000000000</double>
+     </property>
+     <property name="maximum">
+      <double>200000.000000000000000</double>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="operating_state_cbox">
+     <property name="geometry">
+      <rect>
+       <x>280</x>
+       <y>85</y>
+       <width>196</width>
+       <height>22</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_9">
+     <property name="geometry">
+      <rect>
+       <x>280</x>
+       <y>70</y>
+       <width>126</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Operating State</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_10">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>160</y>
+       <width>126</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Capacity Unit</string>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="capacity_unit_cbox">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>175</y>
+       <width>196</width>
+       <height>22</height>
+      </rect>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <tabstops>
+  <tabstop>tabWidget</tabstop>
+  <tabstop>intake_no_edit</tabstop>
+  <tabstop>intake_source_cbox</tabstop>
+  <tabstop>intake_type_cbox</tabstop>
+  <tabstop>capacity_unit_cbox</tabstop>
+  <tabstop>capacity_sbox</tabstop>
+  <tabstop>installation_year_sbox</tabstop>
+  <tabstop>operating_state_cbox</tabstop>
+  <tabstop>status_change_date_chbox</tabstop>
+  <tabstop>status_change_date_edit</tabstop>
+  <tabstop>height_sbox</tabstop>
+  <tabstop>network_cbox</tabstop>
+ </tabstops>
+ <resources>
+  <include location="resources.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>accepted()</signal>
+   <receiver>IntakeDialog</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>248</x>
+     <y>254</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>157</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>rejected()</signal>
+   <receiver>IntakeDialog</receiver>
+   <slot>reject()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>316</x>
+     <y>260</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>286</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

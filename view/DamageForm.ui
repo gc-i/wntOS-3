@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>DamageForm</class>
+ <widget class="QWidget" name="DamageForm">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>553</width>
+    <height>388</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QTableWidget" name="damage_twidget">
+   <property name="geometry">
+    <rect>
+     <x>15</x>
+     <y>25</y>
+     <width>496</width>
+     <height>166</height>
+    </rect>
+   </property>
+   <property name="editTriggers">
+    <set>QAbstractItemView::NoEditTriggers</set>
+   </property>
+   <property name="alternatingRowColors">
+    <bool>true</bool>
+   </property>
+   <property name="selectionMode">
+    <enum>QAbstractItemView::SingleSelection</enum>
+   </property>
+   <property name="selectionBehavior">
+    <enum>QAbstractItemView::SelectRows</enum>
+   </property>
+   <column>
+    <property name="text">
+     <string>Control No.</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Received From</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Occurrence TS</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Registration TS</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Repair TS</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Repaired By</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Repair Task</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Type</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Cause</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Status</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Note</string>
+    </property>
+   </column>
+  </widget>
+  <widget class="QLabel" name="label_16">
+   <property name="geometry">
+    <rect>
+     <x>15</x>
+     <y>10</y>
+     <width>66</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Damages</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="view_maxcom_button">
+   <property name="geometry">
+    <rect>
+     <x>515</x>
+     <y>55</y>
+     <width>25</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>View Complaint Details at MAXCOM</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/wnt/eye.png</normaloff>:/wnt/eye.png</iconset>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="edit_damage_button">
+   <property name="geometry">
+    <rect>
+     <x>515</x>
+     <y>25</y>
+     <width>25</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>View/Edit Damage Details</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/wnt/edit.png</normaloff>:/wnt/edit.png</iconset>
+   </property>
+  </widget>
+ </widget>
+ <tabstops>
+  <tabstop>damage_twidget</tabstop>
+  <tabstop>edit_damage_button</tabstop>
+  <tabstop>view_maxcom_button</tabstop>
+ </tabstops>
+ <resources>
+  <include location="resources.qrc"/>
+ </resources>
+ <connections/>
+</ui>

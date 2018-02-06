@@ -1,0 +1,651 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>DamageDialog</class>
+ <widget class="QDialog" name="DamageDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>588</width>
+    <height>570</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>588</width>
+    <height>570</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>588</width>
+    <height>570</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Add / Edit Damage</string>
+  </property>
+  <widget class="QDialogButtonBox" name="buttonBox">
+   <property name="geometry">
+    <rect>
+     <x>405</x>
+     <y>535</y>
+     <width>166</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+   <property name="standardButtons">
+    <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
+   </property>
+  </widget>
+  <widget class="QTabWidget" name="tabWidget">
+   <property name="geometry">
+    <rect>
+     <x>15</x>
+     <y>10</y>
+     <width>556</width>
+     <height>521</height>
+    </rect>
+   </property>
+   <property name="currentIndex">
+    <number>0</number>
+   </property>
+   <widget class="QWidget" name="tab">
+    <attribute name="title">
+     <string>Description</string>
+    </attribute>
+    <widget class="QDateEdit" name="occurrence_date_edit">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>45</x>
+       <y>120</y>
+       <width>171</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="displayFormat">
+      <string>yyyy-MM-dd</string>
+     </property>
+     <property name="calendarPopup">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="occurrence_date_chbox">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>125</y>
+       <width>26</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QDateEdit" name="registration_date_edit">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>165</y>
+       <width>196</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="displayFormat">
+      <string>yyyy-MM-dd</string>
+     </property>
+     <property name="calendarPopup">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_3">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>105</y>
+       <width>126</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Occurrence Date</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>15</y>
+       <width>231</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Complaint Control No. (from MAXCOM)</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_4">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>150</y>
+       <width>126</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Registration Date</string>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="repaired_by_cbox">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>255</y>
+       <width>196</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="editable">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_6">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>240</y>
+       <width>126</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Repaired By</string>
+     </property>
+    </widget>
+    <widget class="QDateEdit" name="repair_date_edit">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>45</x>
+       <y>210</y>
+       <width>171</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="displayFormat">
+      <string>yyyy-MM-dd</string>
+     </property>
+     <property name="calendarPopup">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="repair_date_chbox">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>215</y>
+       <width>26</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_8">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>195</y>
+       <width>126</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Repair Date</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_9">
+     <property name="geometry">
+      <rect>
+       <x>335</x>
+       <y>15</y>
+       <width>126</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Type</string>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="type_cbox">
+     <property name="geometry">
+      <rect>
+       <x>335</x>
+       <y>30</y>
+       <width>196</width>
+       <height>22</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_10">
+     <property name="geometry">
+      <rect>
+       <x>335</x>
+       <y>60</y>
+       <width>126</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Cause</string>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="cause_cbox">
+     <property name="geometry">
+      <rect>
+       <x>335</x>
+       <y>75</y>
+       <width>196</width>
+       <height>22</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_11">
+     <property name="geometry">
+      <rect>
+       <x>335</x>
+       <y>105</y>
+       <width>126</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Status</string>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="status_cbox">
+     <property name="geometry">
+      <rect>
+       <x>335</x>
+       <y>120</y>
+       <width>196</width>
+       <height>22</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QSpinBox" name="buffer_sbox">
+     <property name="geometry">
+      <rect>
+       <x>335</x>
+       <y>165</y>
+       <width>196</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="maximum">
+      <number>200</number>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_14">
+     <property name="geometry">
+      <rect>
+       <x>335</x>
+       <y>150</y>
+       <width>126</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Buffer [m]</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_15">
+     <property name="geometry">
+      <rect>
+       <x>335</x>
+       <y>195</y>
+       <width>126</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Note</string>
+     </property>
+    </widget>
+    <widget class="QPlainTextEdit" name="note_edit">
+     <property name="geometry">
+      <rect>
+       <x>335</x>
+       <y>210</y>
+       <width>196</width>
+       <height>146</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_2">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>60</y>
+       <width>126</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Received From</string>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="received_from_cbox">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>75</y>
+       <width>196</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="editable">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_7">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>285</y>
+       <width>126</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Repair Task / Activity</string>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="repair_task_cbox">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>300</y>
+       <width>196</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="editable">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="verify_button">
+     <property name="geometry">
+      <rect>
+       <x>160</x>
+       <y>29</y>
+       <width>25</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="toolTip">
+      <string>Verify Control Number</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="icon">
+      <iconset resource="resources.qrc">
+       <normaloff>:/wnt/verify.png</normaloff>:/wnt/verify.png</iconset>
+     </property>
+    </widget>
+    <widget class="QSpinBox" name="control_no_sbox">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>30</y>
+       <width>131</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="minimum">
+      <number>-1</number>
+     </property>
+     <property name="maximum">
+      <number>8000000</number>
+     </property>
+     <property name="value">
+      <number>-1</number>
+     </property>
+    </widget>
+    <widget class="QTableWidget" name="damaged_asset_twidget">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>345</y>
+       <width>256</width>
+       <height>121</height>
+      </rect>
+     </property>
+     <property name="editTriggers">
+      <set>QAbstractItemView::NoEditTriggers</set>
+     </property>
+     <property name="alternatingRowColors">
+      <bool>true</bool>
+     </property>
+     <property name="selectionMode">
+      <enum>QAbstractItemView::SingleSelection</enum>
+     </property>
+     <property name="selectionBehavior">
+      <enum>QAbstractItemView::SelectRows</enum>
+     </property>
+     <column>
+      <property name="text">
+       <string>Asset Type</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Asset ID</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Dist [m]</string>
+      </property>
+     </column>
+    </widget>
+    <widget class="QLabel" name="label_12">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>330</y>
+       <width>221</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Set Damaged Asset</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="set_button">
+     <property name="geometry">
+      <rect>
+       <x>280</x>
+       <y>345</y>
+       <width>41</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="toolTip">
+      <string>Verify Control Number</string>
+     </property>
+     <property name="text">
+      <string>Set</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="view_maxcom_button">
+     <property name="geometry">
+      <rect>
+       <x>190</x>
+       <y>29</y>
+       <width>25</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="toolTip">
+      <string>View Complaint Details at MAXCOM</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="icon">
+      <iconset resource="resources.qrc">
+       <normaloff>:/wnt/eye.png</normaloff>:/wnt/eye.png</iconset>
+     </property>
+    </widget>
+    <widget class="QDoubleSpinBox" name="height_sbox">
+     <property name="geometry">
+      <rect>
+       <x>335</x>
+       <y>380</y>
+       <width>196</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="minimum">
+      <double>-100.000000000000000</double>
+     </property>
+     <property name="maximum">
+      <double>2000.000000000000000</double>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_16">
+     <property name="geometry">
+      <rect>
+       <x>335</x>
+       <y>365</y>
+       <width>126</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Height [m]</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_17">
+     <property name="geometry">
+      <rect>
+       <x>335</x>
+       <y>410</y>
+       <width>126</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Network</string>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="network_cbox">
+     <property name="geometry">
+      <rect>
+       <x>335</x>
+       <y>425</y>
+       <width>196</width>
+       <height>22</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="warning_label">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>470</y>
+       <width>256</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>Warning</string>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <tabstops>
+  <tabstop>tabWidget</tabstop>
+  <tabstop>control_no_sbox</tabstop>
+  <tabstop>verify_button</tabstop>
+  <tabstop>view_maxcom_button</tabstop>
+  <tabstop>received_from_cbox</tabstop>
+  <tabstop>occurrence_date_chbox</tabstop>
+  <tabstop>occurrence_date_edit</tabstop>
+  <tabstop>registration_date_edit</tabstop>
+  <tabstop>repair_date_chbox</tabstop>
+  <tabstop>repair_date_edit</tabstop>
+  <tabstop>repaired_by_cbox</tabstop>
+  <tabstop>repair_task_cbox</tabstop>
+  <tabstop>damaged_asset_twidget</tabstop>
+  <tabstop>set_button</tabstop>
+  <tabstop>type_cbox</tabstop>
+  <tabstop>cause_cbox</tabstop>
+  <tabstop>status_cbox</tabstop>
+  <tabstop>buffer_sbox</tabstop>
+  <tabstop>note_edit</tabstop>
+  <tabstop>height_sbox</tabstop>
+  <tabstop>network_cbox</tabstop>
+  <tabstop>buttonBox</tabstop>
+ </tabstops>
+ <resources>
+  <include location="resources.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>accepted()</signal>
+   <receiver>DamageDialog</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>248</x>
+     <y>254</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>157</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>rejected()</signal>
+   <receiver>DamageDialog</receiver>
+   <slot>reject()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>316</x>
+     <y>260</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>286</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

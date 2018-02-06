@@ -1,0 +1,35 @@
+<RCC>
+    <qresource prefix="/wnt">
+        <file alias="about.png">icons/about.png</file>
+        <file alias="application.png">icons/application.png</file>
+        <file alias="connection.png">icons/connection.png</file>
+        <file alias="help.png">icons/help.png</file>
+        <file alias="tools.png">icons/tools.png</file>
+        <file alias="settings.png">icons/settings.png</file>
+        <file alias="role_management.png">icons/role_management.png</file>
+        <file alias="connected.png">icons/connected.png</file>
+        <file alias="disconnected.png">icons/disconnected.png</file>
+        <file alias="table.png">icons/table.png</file>
+        <file alias="plus.png">icons/plus.png</file>
+        <file alias="minus.png">icons/minus.png</file>
+        <file alias="person.png">icons/person.png</file>
+        <file alias="gps.png">icons/gps.png</file>
+        <file alias="waypoint.png">icons/waypoint.png</file>
+        <file alias="track.png">icons/track.png</file>
+        <file alias="arrow_right.png">icons/arrow_right.png</file>
+        <file alias="arrow_left.png">icons/arrow_left.png</file>
+        <file alias="arrow_left_red.png">icons/arrow_left_red.png</file>
+        <file alias="edit.png">icons/edit.png</file>
+        <file alias="damage.png">icons/damage.png</file>
+        <file alias="document.png">icons/document.png</file>
+        <file alias="copy.png">icons/copy.png</file>
+        <file alias="select.png">icons/select.png</file>
+        <file alias="search.png">icons/search.png</file>
+        <file alias="eye.png">icons/eye.png</file>
+        <file alias="network.png">icons/network.png</file>
+        <file alias="customer.png">icons/customer.png</file>
+        <file alias="verify.png">icons/verify.png</file>
+        <file alias="build_topology.png">icons/topology.png</file>
+        <file alias="reverse_flow.png">icons/switch.png</file>
+    </qresource>
+</RCC>

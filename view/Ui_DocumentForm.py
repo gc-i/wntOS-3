@@ -1,0 +1,96 @@
+# -*- coding: utf-8 -*-
+
+# Form implementation generated from reading ui file './view/DocumentForm.ui'
+#
+# Created by: PyQt5 UI code generator 5.5.1
+#
+# WARNING! All changes made in this file will be lost!
+
+from PyQt5 import QtCore, QtGui, QtWidgets
+
+class Ui_DocumentForm(object):
+    def setupUi(self, DocumentForm):
+        DocumentForm.setObjectName("DocumentForm")
+        DocumentForm.resize(548, 200)
+        self.doc_twidget = QtWidgets.QTableWidget(DocumentForm)
+        self.doc_twidget.setGeometry(QtCore.QRect(15, 25, 496, 151))
+        self.doc_twidget.setEditTriggers(QtWidgets.QAbstractItemView.NoEditTriggers)
+        self.doc_twidget.setAlternatingRowColors(True)
+        self.doc_twidget.setSelectionMode(QtWidgets.QAbstractItemView.SingleSelection)
+        self.doc_twidget.setSelectionBehavior(QtWidgets.QAbstractItemView.SelectRows)
+        self.doc_twidget.setObjectName("doc_twidget")
+        self.doc_twidget.setColumnCount(6)
+        self.doc_twidget.setRowCount(0)
+        item = QtWidgets.QTableWidgetItem()
+        self.doc_twidget.setHorizontalHeaderItem(0, item)
+        item = QtWidgets.QTableWidgetItem()
+        self.doc_twidget.setHorizontalHeaderItem(1, item)
+        item = QtWidgets.QTableWidgetItem()
+        self.doc_twidget.setHorizontalHeaderItem(2, item)
+        item = QtWidgets.QTableWidgetItem()
+        self.doc_twidget.setHorizontalHeaderItem(3, item)
+        item = QtWidgets.QTableWidgetItem()
+        self.doc_twidget.setHorizontalHeaderItem(4, item)
+        item = QtWidgets.QTableWidgetItem()
+        self.doc_twidget.setHorizontalHeaderItem(5, item)
+        self.label_18 = QtWidgets.QLabel(DocumentForm)
+        self.label_18.setGeometry(QtCore.QRect(15, 10, 66, 16))
+        self.label_18.setObjectName("label_18")
+        self.add_doc_button = QtWidgets.QPushButton(DocumentForm)
+        self.add_doc_button.setGeometry(QtCore.QRect(515, 25, 25, 25))
+        self.add_doc_button.setText("")
+        icon = QtGui.QIcon()
+        icon.addPixmap(QtGui.QPixmap(":/wnt/plus.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        self.add_doc_button.setIcon(icon)
+        self.add_doc_button.setObjectName("add_doc_button")
+        self.edit_doc_button = QtWidgets.QPushButton(DocumentForm)
+        self.edit_doc_button.setGeometry(QtCore.QRect(515, 55, 25, 25))
+        self.edit_doc_button.setText("")
+        icon1 = QtGui.QIcon()
+        icon1.addPixmap(QtGui.QPixmap(":/wnt/edit.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        self.edit_doc_button.setIcon(icon1)
+        self.edit_doc_button.setObjectName("edit_doc_button")
+        self.view_doc_button = QtWidgets.QPushButton(DocumentForm)
+        self.view_doc_button.setGeometry(QtCore.QRect(515, 115, 25, 25))
+        self.view_doc_button.setText("")
+        icon2 = QtGui.QIcon()
+        icon2.addPixmap(QtGui.QPixmap(":/wnt/eye.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        self.view_doc_button.setIcon(icon2)
+        self.view_doc_button.setObjectName("view_doc_button")
+        self.delete_doc_button = QtWidgets.QPushButton(DocumentForm)
+        self.delete_doc_button.setGeometry(QtCore.QRect(515, 85, 25, 25))
+        self.delete_doc_button.setText("")
+        icon3 = QtGui.QIcon()
+        icon3.addPixmap(QtGui.QPixmap(":/wnt/minus.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        self.delete_doc_button.setIcon(icon3)
+        self.delete_doc_button.setObjectName("delete_doc_button")
+
+        self.retranslateUi(DocumentForm)
+        QtCore.QMetaObject.connectSlotsByName(DocumentForm)
+        DocumentForm.setTabOrder(self.doc_twidget, self.add_doc_button)
+        DocumentForm.setTabOrder(self.add_doc_button, self.edit_doc_button)
+        DocumentForm.setTabOrder(self.edit_doc_button, self.delete_doc_button)
+        DocumentForm.setTabOrder(self.delete_doc_button, self.view_doc_button)
+
+    def retranslateUi(self, DocumentForm):
+        _translate = QtCore.QCoreApplication.translate
+        DocumentForm.setWindowTitle(_translate("DocumentForm", "Form"))
+        item = self.doc_twidget.horizontalHeaderItem(0)
+        item.setText(_translate("DocumentForm", "Doc No."))
+        item = self.doc_twidget.horizontalHeaderItem(1)
+        item.setText(_translate("DocumentForm", "Creation Date"))
+        item = self.doc_twidget.horizontalHeaderItem(2)
+        item.setText(_translate("DocumentForm", "Author"))
+        item = self.doc_twidget.horizontalHeaderItem(3)
+        item.setText(_translate("DocumentForm", "File Name"))
+        item = self.doc_twidget.horizontalHeaderItem(4)
+        item.setText(_translate("DocumentForm", "Doc Type"))
+        item = self.doc_twidget.horizontalHeaderItem(5)
+        item.setText(_translate("DocumentForm", "Note"))
+        self.label_18.setText(_translate("DocumentForm", "Documents"))
+        self.add_doc_button.setToolTip(_translate("DocumentForm", "Add Document"))
+        self.edit_doc_button.setToolTip(_translate("DocumentForm", "View/Edit Document Details"))
+        self.view_doc_button.setToolTip(_translate("DocumentForm", "View Document"))
+        self.delete_doc_button.setToolTip(_translate("DocumentForm", "Delete Document"))
+
+from . import resources_rc

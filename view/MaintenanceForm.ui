@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MaintenanceForm</class>
+ <widget class="QWidget" name="MaintenanceForm">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>553</width>
+    <height>388</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QPushButton" name="delete_maintenance_button">
+   <property name="geometry">
+    <rect>
+     <x>515</x>
+     <y>85</y>
+     <width>25</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>Delete Maintenance</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/wnt/minus.png</normaloff>:/wnt/minus.png</iconset>
+   </property>
+  </widget>
+  <widget class="QTableWidget" name="maintenance_twidget">
+   <property name="geometry">
+    <rect>
+     <x>15</x>
+     <y>25</y>
+     <width>496</width>
+     <height>166</height>
+    </rect>
+   </property>
+   <property name="editTriggers">
+    <set>QAbstractItemView::NoEditTriggers</set>
+   </property>
+   <property name="alternatingRowColors">
+    <bool>true</bool>
+   </property>
+   <property name="selectionMode">
+    <enum>QAbstractItemView::SingleSelection</enum>
+   </property>
+   <property name="selectionBehavior">
+    <enum>QAbstractItemView::SelectRows</enum>
+   </property>
+   <property name="columnCount">
+    <number>4</number>
+   </property>
+   <attribute name="horizontalHeaderVisible">
+    <bool>true</bool>
+   </attribute>
+   <attribute name="horizontalHeaderDefaultSectionSize">
+    <number>110</number>
+   </attribute>
+   <attribute name="horizontalHeaderMinimumSectionSize">
+    <number>35</number>
+   </attribute>
+   <column>
+    <property name="text">
+     <string>Maintenance Date</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Maintained By</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Maintenance Task</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Note</string>
+    </property>
+   </column>
+  </widget>
+  <widget class="QPushButton" name="add_maintenance_button">
+   <property name="geometry">
+    <rect>
+     <x>515</x>
+     <y>25</y>
+     <width>25</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>Add Maintenance</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/wnt/plus.png</normaloff>:/wnt/plus.png</iconset>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_16">
+   <property name="geometry">
+    <rect>
+     <x>15</x>
+     <y>10</y>
+     <width>66</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Maintenance</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="edit_maintenance_button">
+   <property name="geometry">
+    <rect>
+     <x>515</x>
+     <y>55</y>
+     <width>25</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>View/Edit Maintenance Details</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/wnt/edit.png</normaloff>:/wnt/edit.png</iconset>
+   </property>
+  </widget>
+ </widget>
+ <tabstops>
+  <tabstop>maintenance_twidget</tabstop>
+  <tabstop>add_maintenance_button</tabstop>
+  <tabstop>edit_maintenance_button</tabstop>
+  <tabstop>delete_maintenance_button</tabstop>
+ </tabstops>
+ <resources>
+  <include location="resources.qrc"/>
+ </resources>
+ <connections/>
+</ui>

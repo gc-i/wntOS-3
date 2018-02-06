@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>RepairMaterialForm</class>
+ <widget class="QWidget" name="RepairMaterialForm">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>554</width>
+    <height>340</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QTableWidget" name="material_twidget">
+   <property name="geometry">
+    <rect>
+     <x>15</x>
+     <y>25</y>
+     <width>496</width>
+     <height>166</height>
+    </rect>
+   </property>
+   <property name="editTriggers">
+    <set>QAbstractItemView::NoEditTriggers</set>
+   </property>
+   <property name="alternatingRowColors">
+    <bool>true</bool>
+   </property>
+   <property name="selectionMode">
+    <enum>QAbstractItemView::SingleSelection</enum>
+   </property>
+   <property name="selectionBehavior">
+    <enum>QAbstractItemView::SelectRows</enum>
+   </property>
+   <column>
+    <property name="text">
+     <string>Amount</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Material</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Total Cost [TZS]</string>
+    </property>
+   </column>
+  </widget>
+  <widget class="QPushButton" name="delete_material_button">
+   <property name="geometry">
+    <rect>
+     <x>515</x>
+     <y>85</y>
+     <width>25</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>Delete Material</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/wnt/minus.png</normaloff>:/wnt/minus.png</iconset>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="add_material_button">
+   <property name="geometry">
+    <rect>
+     <x>515</x>
+     <y>25</y>
+     <width>25</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>Add Material</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/wnt/plus.png</normaloff>:/wnt/plus.png</iconset>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="edit_material_button">
+   <property name="geometry">
+    <rect>
+     <x>515</x>
+     <y>55</y>
+     <width>25</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>View/Edit Material Details</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/wnt/edit.png</normaloff>:/wnt/edit.png</iconset>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_16">
+   <property name="geometry">
+    <rect>
+     <x>15</x>
+     <y>10</y>
+     <width>131</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Repair Material</string>
+   </property>
+  </widget>
+ </widget>
+ <resources>
+  <include location="resources.qrc"/>
+ </resources>
+ <connections/>
+</ui>
