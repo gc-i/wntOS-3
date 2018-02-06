@@ -48,8 +48,8 @@ class WntOS(object):
             QApplication.installTranslator(self.translator)
 
         self.actions = []
-        self.toolbar = self.iface.addToolBar(self.tr("WNT Open Source"))
-        self.menu = QMenu(self.tr("WNT Open Source"))
+        self.toolbar = self.iface.addToolBar(self.tr("WNT Open Source 3"))
+        self.menu = QMenu(self.tr("WNT Open Source 3"))
         self.help_action = None
         self.edit_asset_action = None
         self.settings_action = None
