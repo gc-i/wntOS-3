@@ -26,4 +26,4 @@ Please submit bugs, errors or glitches on the "Issues" tab of this project.
 * [User Guide](https://github.com/gc-i/wntOS/wiki/UserGuide)
 * [TODO](https://github.com/gc-i/wntOS/wiki/Todo)
 * [Changes](https://github.com/gc-i/wntOS/wiki/Changes)
-* [QGIS3 Port Remarks](https://github.com/gc-i/wntOS/wiki/Port)
+* [QGIS3 Port Remarks](https://github.com/gc-i/wntOS/wiki/QGIS3Port)
